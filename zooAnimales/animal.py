@@ -11,15 +11,15 @@ class Animal:
     @classmethod
     def totalPorTipo(cls):
         resultado = []
-        from mamifero import Mamifero
+        from zooAnimales.mamifero import Mamifero
         resultado.append(f"Mamiferos: {Mamifero.mamiferos}")
-        from ave  import Ave
+        from zooAnimales.ave  import Ave
         resultado.append(f"Aves: {Ave.aves}")
-        from reptil import Reptil
+        from zooAnimales.reptil import Reptil
         resultado.append(f"Reptiles: {Reptil.reptiles}")
-        from pez import Pez
+        from zooAnimales.pez import Pez
         resultado.append(f"Peces: {Pez.peces}")
-        from anfibio import Anfibio
+        from zooAnimales.anfibio import Anfibio
         resultado.append(f"Anfibios: {Anfibio.anfibios}")
         return "\n".join(resultado)
 
