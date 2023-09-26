@@ -1,13 +1,3 @@
-from mamifero import Mamifero
-
-from ave  import Ave
-
-from reptil import Reptil
-
-from pez import Pez
-
-from anfibio import Anfibio
-
 class Animal:
     _totalAnimales = 0
     def __init__(self, nombre = None, edad = None, habitat = None, genero = None, zona = None):
@@ -21,10 +11,15 @@ class Animal:
     @classmethod
     def total_por_tipo(cls):
         resultado = []
+        from mamifero import Mamifero
         resultado.append(f"Mamiferos: {Mamifero.mamiferos}")
+        from ave  import Ave
         resultado.append(f"Aves: {Ave.aves}")
+        from reptil import Reptil
         resultado.append(f"Reptiles: {Reptil.reptiles}")
+        from pez import Pez
         resultado.append(f"Peces: {Pez.peces}")
+        from anfibio import Anfibio
         resultado.append(f"Anfibios: {Anfibio.anfibios}")
         return "\n".join(resultado)
 
