@@ -12,18 +12,18 @@ class Animal:
     def totalPorTipo(cls):
         resultado = []
         from zooAnimales.mamifero import Mamifero
-        resultado.append(f"Mamiferos: {Mamifero.cantidadMamiferos()}")
+        resultado.append(f"Mamiferos : {Mamifero.cantidadMamiferos()}")
         from zooAnimales.ave  import Ave
-        resultado.append(f"Aves: {Ave.cantidadAves()}")
+        resultado.append(f"Aves : {Ave.cantidadAves()}")
         from zooAnimales.reptil import Reptil
-        resultado.append(f"Reptiles: {Reptil.cantidadReptiles()}")
+        resultado.append(f"Reptiles : {Reptil.cantidadReptiles()}")
         from zooAnimales.pez import Pez
-        resultado.append(f"Peces: {Pez.cantidadPeces()}")
+        resultado.append(f"Peces : {Pez.cantidadPeces()}")
         from zooAnimales.anfibio import Anfibio
-        resultado.append(f"Anfibios: {Anfibio.cantidadAnfibios()}")
+        resultado.append(f"Anfibios : {Anfibio.cantidadAnfibios()}")
         return "\n".join(resultado)
 
-    def __str__(self):
+    def toString(self):
         if self._zona is not None:
             imprimible = "Mi nombre es " + self._nombre + ", tengo una edad de " + str(self._edad) + ", habito en " + self._habitat + " y mi genero es " + self._genero + ", la zona en la que me ubico es " + self._zona.getNombre() + ", en el " + self._zona.getZoo().getNombre()
         else:
