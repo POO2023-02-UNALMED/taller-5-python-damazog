@@ -12,15 +12,15 @@ class Animal:
     def totalPorTipo(cls):
         resultado = []
         from zooAnimales.mamifero import Mamifero
-        resultado.append(f"Mamiferos: {Mamifero.mamiferos}")
+        resultado.append(f"Mamiferos: {Mamifero.cantidadMamiferos()}")
         from zooAnimales.ave  import Ave
-        resultado.append(f"Aves: {Ave.aves}")
+        resultado.append(f"Aves: {Ave.cantidadAves()}")
         from zooAnimales.reptil import Reptil
-        resultado.append(f"Reptiles: {Reptil.reptiles}")
+        resultado.append(f"Reptiles: {Reptil.cantidadReptiles()}")
         from zooAnimales.pez import Pez
-        resultado.append(f"Peces: {Pez.peces}")
+        resultado.append(f"Peces: {Pez.cantidadPeces()}")
         from zooAnimales.anfibio import Anfibio
-        resultado.append(f"Anfibios: {Anfibio.anfibios}")
+        resultado.append(f"Anfibios: {Anfibio.cantidadAnfibios()}")
         return "\n".join(resultado)
 
     def __str__(self):
