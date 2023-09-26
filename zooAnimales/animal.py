@@ -25,7 +25,7 @@ class Animal:
         resultado.append(f"Aves: {Ave.aves}")
         resultado.append(f"Reptiles: {Reptil.reptiles}")
         resultado.append(f"Peces: {Pez.peces}")
-        resultado.append(f"Anfibios: {cls.anfibios}")
+        resultado.append(f"Anfibios: {Anfibio.anfibios}")
         return "\n".join(resultado)
 
     def __str__(self):
