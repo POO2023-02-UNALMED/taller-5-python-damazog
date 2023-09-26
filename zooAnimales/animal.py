@@ -29,3 +29,10 @@ class Animal:
         else:
             imprimible = "Mi nombre es " + self._nombre + ", tengo una edad de " + str(self._edad) + ", habito en " + self._habitat + " y mi genero es " + self._genero
         return imprimible
+    
+    def getZona(self):
+        return self._zona
+    
+    def setZona(self, zona):
+        self._zona = zona
+        
