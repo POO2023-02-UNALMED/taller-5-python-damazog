@@ -25,3 +25,9 @@ class Mamifero(Animal):
         leon = Mamifero(nombre, edad, "pradera", genero, zona, True, 4)
         cls._leones += 1
         return leon
+    
+    def getPelaje(self):
+        return self._pelaje
+    
+    def getPatas(self):
+        return self._patas

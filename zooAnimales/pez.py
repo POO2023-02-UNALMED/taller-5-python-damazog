@@ -25,3 +25,9 @@ class Pez(Animal):
         bacalao = Pez(nombre, edad, "oceano", genero, zona, "gris", 6)
         cls._bacalaos += 1
         return bacalao
+    
+    def getColorEscamas(self):
+        return self._colorEscamas
+    
+    def getCantidadAletas(self):
+        return self._cantidadAletas

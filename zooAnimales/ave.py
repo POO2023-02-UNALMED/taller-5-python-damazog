@@ -24,3 +24,8 @@ class Ave(Animal):
         aguila = Ave(nombre, edad, "montanas", genero, zona, "blanco y amarillo")
         cls._aguilas += 1
         return aguila
+    
+    def getColorPlumas(self):
+        return self._colorPlumas
+    
+    
