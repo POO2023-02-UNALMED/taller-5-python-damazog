@@ -4,8 +4,8 @@ class Anfibio(Animal):
     _Ranas = 0
     _salamandras = 0
     _listado = []
-    def __init__(self, nombre = None, edad = None, habitat = None, genero = None, zona = None, colorPiel = None, venenoso = None):
-        super().__init__(nombre, edad, habitat, genero, zona)
+    def __init__(self, nombre = None, edad = None, habitat = None, genero = None, colorPiel = None, venenoso = None): #quite zona de aca
+        super().__init__(nombre, edad, habitat, genero)
         self._colorPiel = colorPiel
         self._venenoso = venenoso
         Anfibio._listado.append(self)
@@ -15,14 +15,14 @@ class Anfibio(Animal):
         return len(cls._listado)
     
     @ classmethod
-    def crearRana(cls, nombre, edad, genero, zona = None):
-        rana = Anfibio(nombre, edad, "selva", genero, zona, "rojo", True)
+    def crearRana(cls, nombre, edad, genero): #quite zona de aca
+        rana = Anfibio(nombre, edad, "selva", genero, "rojo", True) #quite zona de aca
         cls._Ranas += 1
         return rana
     
     @ classmethod
-    def crearSalamandra(cls, nombre, edad, genero, zona = None):
-        salamandra = Anfibio(nombre, edad, "selva", genero, zona, "negro y amarillo", False)
+    def crearSalamandra(cls, nombre, edad, genero):#quite zona de aca
+        salamandra = Anfibio(nombre, edad, "selva", genero, "negro y amarillo", False) #quite zona de aca
         cls._salamandras += 1
         return salamandra
     
