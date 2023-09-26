@@ -9,7 +9,7 @@ class Animal:
         Animal._totalAnimales += 1
 
     @classmethod
-    def total_por_tipo(cls):
+    def totalPorTipo(cls):
         resultado = []
         from mamifero import Mamifero
         resultado.append(f"Mamiferos: {Mamifero.mamiferos}")
